@@ -1,0 +1,60 @@
+body {
+  background-color: #459f0b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #459f0b;
+}
+
+.info {
+  float: right;
+  font-size: 1em;
+  font-style: italic;
+  line-height: 0em;
+  font-weight: 600;
+  position: absolute;
+  right: 16px;
+  vertical-align: middle;
+}
+
+.banner {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.list-of-actions {
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.title {
+  font-weight: 600;
+}
+.value {
+  padding-left: 1rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px 10px;
+}
+
+.actions-grid .card {
+  background-color: #eee;
+  border: 2px solid rgb(148, 148, 148);
+}
+
+.records-toggle {
+  border: 1px solid rgb(107, 181, 194);
+  border-radius: 0.2rem;
+}

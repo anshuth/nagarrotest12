@@ -1,0 +1,494 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anshu - CommandPro</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="m-0 p-0">
+    <div id="dvCountDown" class="d-none d-flex justify-content-center align-items-center" style="display:none;position:fixed;z-index: 5;background-color: #eeeeee60;height: 100%;width: 100%">
+        <img src="./static/bigrotation2.gif" alt="">
+    </div>
+    <div class="container-fluid">
+      <div class="card banner mt-5">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <img src="./static/banner.png" alt="banner" width="100%" />
+          <div class="card-info info text-end">
+            <p>Incident Open Action Tracker</p>
+            <p>ICS 233-CG</p>
+          </div>
+        </div>
+      </div>
+      <div class="card list-of-actions p-3">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <div>
+            <p class="text-success fs-4">
+              List of Actions
+              <span class="=incident-location pl-3 text-secondary fs-6"
+                >(Incident Location - 10)</span
+              >
+            </p>
+          </div>
+          <div>
+            <p>Showing 1 - 4 of 4 Records</p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="btn-group records-toggle">
+              <button class="btn btn-sm" type="button">
+                10
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end text-center">
+                <li>10</li>
+                <li>20</li>
+                <li>30</li>
+                <li>40</li>
+              </ul>
+            </div>
+            <div class="ms-2">Records Per Page</div>
+          </div>
+        </div>
+        <div class="mt-3 actions-grid">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5><span class="card-index">1.</span> Lorem Ipsum</h5>
+                <div class="action-card-cta">
+                  <button class="btn"><img src="./static/edit.svg" alt="" /></button>
+                  <button class="btn" ><img src="./static/delete.svg" alt="" /></button>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">For/PoC:</span>
+                  <span class="value">HON CIRCLE</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">PoC Briefed:</span>
+                  <span class="value">Miles & More</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Start Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">Target Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Actual Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5><span class="card-index">2.</span> Lorem Ipsum</h5>
+                <div class="action-card-cta">
+                  <button class="btn"><img src="./static/edit.svg" alt="" /></button>
+                  <button class="btn" ><img src="./static/delete.svg" alt="" /></button>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">For/PoC:</span>
+                  <span class="value">HON CIRCLE</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">PoC Briefed:</span>
+                  <span class="value">Miles & More</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Start Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">Target Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Actual Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5><span class="card-index">3.</span> Lorem Ipsum</h5>
+                <div class="action-card-cta">
+                  <button class="btn"><img src="./static/edit.svg" alt="" /></button>
+                  <button class="btn" ><img src="./static/delete.svg" alt="" /></button>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">For/PoC:</span>
+                  <span class="value">HON CIRCLE</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">PoC Briefed:</span>
+                  <span class="value">Miles & More</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Start Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">Target Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Actual Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id='Card4'>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5><span class="card-index">4.</span> Lorem Ipsum</h5>
+                <div class="action-card-cta">
+                  <button class="btn"><img src="./static/edit.svg" alt="" /></button>
+                  <button class="btn" id="deleteCard"><img src="./static/delete.svg" alt="" /></button>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">For/PoC:</span>
+                  <span class="value">HON CIRCLE</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">PoC Briefed:</span>
+                  <span class="value">Miles & More</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Start Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+                <div class="input-group flex-child">
+                  <span class="title">Target Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+              <div class="row flex-container">
+                <div class="input-group flex-child">
+                  <span class="title">Actual Date:</span>
+                  <span class="value">29/01/2010 06:30:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 mt-3 d-flex justify-content-between align-items-center"
+        >
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="me-3">Page:</p>
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Showing 1 - 4 of 4 Records</p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="btn-group records-toggle">
+              <button class="btn btn-sm" type="button">
+                10
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end text-center">
+                <li>10</li>
+                <li>20</li>
+                <li>30</li>
+                <li>40</li>
+              </ul>
+            </div>
+            <div class="ms-2">Records Per Page</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card new-actions mt-5 mb-5 p-3">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div>
+                <div class="accordion-header" id="panelsStayOpen-headingOne">
+                    <div class="col-12 d-flex justify-content-between align-items-center header">
+                        <h5>New Actions</h5>
+                        <div>
+                            <button class="btn btn-dark me-2">Insert New Line</button>
+                            <button class="btn btn-dark me-2">Reorder List</button>
+                            <button type="button" class="btn" id="toggleHide" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Hide <span class="ms-2"><img src="./arrow.svg" alt="" height="1rem"></span></button>
+                        </div>
+                    </div>     
+                </div>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-3 p-3">
+                       <div class="input-group-sm d-flex justify-content-between align-items-center mb-3">
+                            <div class="title">Line No.:</div>
+                            <div class="dropdown">
+                            <button class="dropdown-toggle btn border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                At Last
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="input-group-sm d-flex justify-content-between align-items-center mb-3">
+                            <div class="title">Item:</div>
+                            <input type="checkbox" value="" id="itemCheck">
+                        </div>
+                        <div class="input-group-sm d-flex justify-content-between align-items-center mb-3">
+                            <div class="title">Status:</div>
+                            <div class="dropdown">
+                            <button class="dropdown-toggle btn border-secondary" id='status' type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                --Select--
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item selected" href="#">Pending</a></li>
+                                <li><a class="dropdown-item" href="#">WIP</a></li>
+                                <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Done</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you want to change the status to DONE?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO</button>
+                                <button type="button" class="btn btn-primary" id='confirmDone' value='Done'>YES</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-4 p-3">
+                       <div class="input-group-sm d-flex justify-content-between align-items-center mb-3">
+                            <div class="title">For/PoC:</div>
+                            <input type="text">
+                        </div>
+                        <div class="input-group-sm d-flex justify-content-between align-items-center mb-3">
+                            <div class="title">PoC Briefed:</div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-5 p-3">
+                       <div class="input-group-sm d-flex justify-content-between align-items-center">
+                            <div class="date d-flex justify-content-between align-items-center">
+                               <div class="title me-2">Start Date:</div>
+                                <input type="date" name="" id=""> 
+                            </div>
+                            <div class="time d-flex justify-content-between align-items-center">
+                                <div class="p-3 d-flex justify-content-between align-items-center">
+                                   <div class="title me-2">Hr:</div>
+                                    <div class="dropdown">
+                            <button class="dropdown-toggle btn border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                18
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">01</a></li>
+                                <li><a class="dropdown-item" href="#">02</a></li>
+                                <li><a class="dropdown-item" href="#">03</a></li>
+                            </ul>
+                                    </div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-between align-items-center">
+                                    <div class="title me-2">Min:</div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle btn border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">38</button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">01</a></li>
+                                            <li><a class="dropdown-item" href="#">02</a></li>
+                                            <li><a class="dropdown-item" href="#">03</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                        <div class="input-group-sm d-flex justify-content-between align-items-center">
+                            <div class="date d-flex justify-content-between align-items-center">
+                               <div class="title me-2">Start Date:</div>
+                                <input type="date" name="" id=""> 
+                            </div>
+                            <div class="time d-flex justify-content-between align-items-center">
+                                <div class="p-3 d-flex justify-content-between align-items-center">
+                                   <div class="title me-2">Hr:</div>
+                                    <div class="dropdown">
+                            <button class="dropdown-toggle btn border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                18
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">01</a></li>
+                                <li><a class="dropdown-item" href="#">02</a></li>
+                                <li><a class="dropdown-item" href="#">03</a></li>
+                            </ul>
+                                    </div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-between align-items-center">
+                                    <div class="title me-2">Min:</div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle btn border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">38</button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">01</a></li>
+                                            <li><a class="dropdown-item" href="#">02</a></li>
+                                            <li><a class="dropdown-item" href="#">03</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                        <div class="input-group-sm d-flex justify-content-between align-items-center">
+                            <div class="date d-flex justify-content-between align-items-center">
+                               <div class="title me-2">Start Date:</div>
+                                <input type="date" name="" id=""> 
+                            </div>
+                            <div class="time d-flex justify-content-between align-items-center">
+                                <div class="p-3 d-flex justify-content-between align-items-center">
+                                   <div class="title me-2">Hr:</div>
+                                    <div class="dropdown">
+                            <button class="dropdown-toggle btn border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                18
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">01</a></li>
+                                <li><a class="dropdown-item" href="#">02</a></li>
+                                <li><a class="dropdown-item" href="#">03</a></li>
+                            </ul>
+                                    </div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-between align-items-center">
+                                    <div class="title me-2">Min:</div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle btn border-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">38</button>
+                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">01</a></li>
+                                            <li><a class="dropdown-item" href="#">02</a></li>
+                                            <li><a class="dropdown-item" href="#">03</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="cta d-flex justify-content-end align-items-center mb-3">
+    <button class="btn btn-dark me-3" id="btnRedirect">Save</button>        
+    <button class="btn btn-dark me-3">Save & Exit</button>        
+    <button class="btn btn-dark">Cancel</button>        
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        /* A1. Delete Card */
+        $('#deleteCard').click(function(){
+            $('#Card4').remove()
+        })
+    </script>
+    <script>
+        /* A2. Toggle Hide */
+        $(function(){
+        $("#toggleHide").click(function () {
+            $(this).text(function(i, text){
+                return text === "Show Action" ? "Hide" : "Show Action";
+            })
+        });
+        })
+    </script>
+    <script>
+        /* A3. Status Done */
+        $('#confirmDone').click(function(){
+            $('#status').text($(this).val())
+            $('.btn-close').click()
+        })
+    </script>
+    <script>
+        /* A5. Save */
+    $(function () {  
+    $("#btnRedirect").click(function () {  
+        var seconds = 2;  
+        $('#dvCountDown').removeClass('d-none')
+        $("#dvCountDown").show();  
+        $("#lblCount").html(seconds);  
+        setInterval(function () {  
+            seconds--;  
+            $("#lblCount").html(seconds);  
+            if (seconds == 0) {  
+                $("#dvCountDown").hide();  
+                $('#dvCountDown').addClass('d-none')
+                window.location = "./thanks.html";  
+            }  
+        }, 1000);  
+    });  
+});
+    </script>
+  </body>
+</html>
